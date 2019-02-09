@@ -24,6 +24,7 @@ class TabLink {
 
     // Add a click event that invokes this.selectTab
     // this.tabElement.addEventListener();
+                                                        */
   }
 
   selectTab(){
@@ -69,4 +70,6 @@ class TabCard {
 - In your .forEach() method's callback function, return a new instance of TabLink and pass in each tab as a parameter
 
 */
-let tabs = document.querySelectorAll();
+let tabs = document.querySelectorAll('.tab')
+  console.log(tabs)
+tabs.forEach(tab => new TabLink(tab));
